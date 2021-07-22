@@ -31,14 +31,15 @@
       }
     </style>
   </noscript>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 </head>
 
 <body class="note-success" id="top">
   <!-- header_nav -->
-  <header class="d-print-none">
+  <header class="d-print-none fixed-top">
     <div class="container text-center text-lg-left">
       <div class="pt-4">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
           <div class="container">
             <a class="navbar-brand" href="#">Roger Lo</a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
@@ -73,7 +74,7 @@
   <div class="page-content">
     <div class="container">
       <div class="resume-container">
-        <div class="shadow-1-strong bg-white my-3" id="intro">
+        <div class="shadow-1-strong bg-white my-custom" id="intro">
           <div class="bg-info text-white">
             <div class="cover bg-image"><img src="images/header-background.jpg" />
               <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
@@ -372,13 +373,20 @@
     </div>
     <div id="rogerArrow" class="position-fixed">
       <a href="#" class="btn-i">
-        <i class="fab fa-btc fa-5x"></i>
+        <i class="fab fa-btc fa-3x"></i>
       </a>
     </div>
   </footer>
   <script src="scripts/mdb.min.js?ver=1.2.1"></script>
   <script src="scripts/aos.js?ver=1.2.1"></script>
   <script src="scripts/main.js?ver=1.2.1"></script>
+  <script>
+    $(function () {
+      $('.navbar a').on('click', function () {
+        $('.navbar-toggler').click();
+      });
+    });
+  </script>
 </body>
 
 </html>
