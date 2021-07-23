@@ -5,3 +5,10 @@ AOS.init({
 });
 
 // Add your javascript here
+
+$(function () {
+  $('.navbar a').on('click', function () {
+    $('.navbar-toggler').click();
+  });
+});
+
