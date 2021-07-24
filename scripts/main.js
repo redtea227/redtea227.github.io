@@ -12,3 +12,12 @@ $(function () {
   });
 });
 
+
+$("#rogerMenu a").click(function () {
+  const who = $(this).attr('href'),
+    val = $(who).offset().top - $("#rogerMenu").innerHeight();
+  // $("html").scrollTop(val);
+  $("html").animate({
+    scrollTop: val
+  }, 1000);
+});

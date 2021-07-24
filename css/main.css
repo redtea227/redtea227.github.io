@@ -1,3 +1,11 @@
+:root{
+  scroll-behavior: auto;
+}
+
+.resume-container .shadow-1-strong{
+  border-radius: 5px;
+}
+
 /* cover info */
 .card{
   position: relative;
@@ -163,8 +171,12 @@ html, body {
 .cover>img {
   -o-object-fit: cover;
   object-fit: cover;
-  max-width: 100%;
   height: auto;
+}
+
+.avatar>img{
+  width: 140px;
+  height: 160px;
 }
 
 .progress-bar {
@@ -231,7 +243,7 @@ footer a:not(.nav-link) {
     padding: 0;
   }
   .cover {
-    height: 360px;
+    /* height: 360px; */
     margin-bottom: 1.5rem;
   }
   .cover>img {
