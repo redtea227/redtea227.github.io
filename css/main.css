@@ -2,6 +2,14 @@
   scroll-behavior: auto;
 }
 
+.pad-5{
+  padding: 5rem!important;
+}
+
+.bg-custom{
+  background: #dbfbff;
+}
+
 .resume-container .shadow-1-strong{
   border-radius: 5px;
 }
@@ -166,6 +174,7 @@ html, body {
 
 .cover {
   height: 500px;
+  border-radius: 5px;
 }
 
 .cover>img {
