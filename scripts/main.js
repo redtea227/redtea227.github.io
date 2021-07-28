@@ -21,3 +21,35 @@ $("#rogerMenu a").click(function () {
     scrollTop: val
   }, 1000);
 });
+
+//check bg menu
+const bgmenu = function () {
+  const
+    viewWidth = $(window).innerWidth(),
+    nowat = $(window).scrollTop(),
+    // height = $("#intro").innerHeight(),
+    offset = $("#rogerMenu").innerHeight() + 1;
+
+  if (nowat <= offset) { //0~910 menu沒有bg 首區內
+    $("#rogerArrow").fadeOut(); //隱藏至頂按鈕
+    
+    if (viewWidth > 767) $("#rogerMenu").removeClass('bg-custom'); //大畫面
+    else $("#rogerMenu").addClass('bg-custom'); //小畫面
+  } else { //在其他主題時
+    $("#rogerMenu").addClass('bg-custom');
+    $("#rogerArrow").fadeIn();
+  }
+}
+
+
+
+// 網頁滾動時
+$(window).scroll(function () {
+  // spy();
+  bgmenu();
+});
+// 網頁更改寬度時
+$(window).resize(bgmenu);
+
+// spy();
+bgmenu();
