@@ -7,31 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Roger_Resume</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
-    media="print" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  </noscript>
-  <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+TC:wght@300&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
   <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
   <link href="css/main.css?ver=1.2.1" rel="stylesheet">
 
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
 </head>
 
 <body class="note-success" id="top">
@@ -83,8 +69,7 @@
                   <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/avatar.jpg"></div>
                   <div class="header-bio mt-3">
                     <div data-aos="zoom-in" data-aos-delay="0">
-                      <h2 class="h1">Roger Lo</h2>
-                      <p>Web Developer</p>
+                      <p id="app"></p>
                     </div>
                     <div class="header-social mb-3" data-aos="zoom-in" data-aos-delay="200">
                       <nav role="navigation">
@@ -118,12 +103,16 @@
             <div class="row">
               <div class="col">
                 <h2 class="h2 fw-light mb-4">About Me</h2>
-                <p>Hello! I’m Roger Lo. I am passionate about UI/UX design and Web Design. I am a skilled
-                  <strong>front-end developer</strong> and master of graphic design tools such as Photoshop and Sketch.
-                  I am a quick learner and a team worker that gets the job done.
-                </p>
-                <p>I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time
-                  schemas.</p>
+                <div data-aos="zoom-out" data-aos-delay="0">
+                  <p>Hello! I’m Roger Lo. I am passionate about UI/UX design and Web Design. I am a skilled
+                    <strong>front-end developer</strong> and master of graphic design tools such as Photoshop and
+                    Sketch.
+                    I am a quick learner and a team worker that gets the job done.
+                  </p>
+                  <p>I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for
+                    real-time
+                    schemas.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -529,6 +518,7 @@
     crossorigin="anonymous"></script>
   <script src="scripts/mdb.min.js?ver=1.2.1"></script>
   <script src="scripts/aos.js?ver=1.2.1"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script src="scripts/main.js?ver=1.2.1"></script>
 </body>
 

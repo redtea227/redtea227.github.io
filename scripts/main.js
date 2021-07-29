@@ -53,3 +53,21 @@ $(window).resize(bgmenu);
 
 // spy();
 bgmenu();
+
+// typewriter
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+  loop: false,
+  delay: 125,
+});
+
+typewriter
+  .pauseFor(1000)
+  .typeString('<span id="slogan">To make each day count<span>&#128513;</span><span>&#128513;</span><span>&#128513;</span></span>')
+  .pauseFor(500)
+  .deleteChars(6)
+  .typeString('<br><span style="font-size:40px">Roger Lo</span><br><span>Web developer</span>')
+  .pauseFor(1000)
+  .start();
+  
