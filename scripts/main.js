@@ -70,10 +70,10 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .pauseFor(1000)
-  .typeString('<span id="slogan">To make each day count...<span>&#128513;</span><span>&#128513;</span><span>&#128513;</span></span>')
   .pauseFor(500)
-  .deleteChars(9)
+  .typeString('<span id="slogan">To make each day count...<span>&#128513;</span><span>&#128513;</span><span>&#128513;</span></span>')
+  .pauseFor(200)
+  .deleteChars(8)
   .typeString('<br><span style="font-size:40px">Roger Lo</span><br><span>Web developer</span>')
   .pauseFor(1000)
   .start();
