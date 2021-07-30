@@ -16,7 +16,7 @@ $(function () {
 $("#rogerMenu a").click(function () {
   const who = $(this).attr('href'),
     viewWidth = $(window).innerWidth(),
-    val = $(who).offset().top - $("#rogerMenu").innerHeight();
+    val = $(who).offset().top - $("#rogerMenu").innerHeight()+1;
   // $("html").scrollTop(val);
   if (viewWidth > 960) {
     $("html").animate({
@@ -71,7 +71,7 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(1000)
-  .typeString('<span id="slogan">To make each day count<span>&#128513;</span><span>&#128513;</span><span>&#128513;...</span></span>')
+  .typeString('<span id="slogan">To make each day count...<span>&#128513;</span><span>&#128513;</span><span>&#128513;</span></span>')
   .pauseFor(500)
   .deleteChars(9)
   .typeString('<br><span style="font-size:40px">Roger Lo</span><br><span>Web developer</span>')
