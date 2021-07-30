@@ -15,11 +15,18 @@ $(function () {
 
 $("#rogerMenu a").click(function () {
   const who = $(this).attr('href'),
+    viewWidth = $(window).innerWidth(),
     val = $(who).offset().top - $("#rogerMenu").innerHeight();
   // $("html").scrollTop(val);
-  $("html").animate({
-    scrollTop: val
-  }, 1000);
+  if (viewWidth > 960) {
+    $("html").animate({
+      scrollTop: val
+    }, 1000);
+  } else {
+    $("html").animate({
+      scrollTop: val + 200
+    }, 1000);
+  }
 });
 
 //check bg menu
@@ -32,7 +39,7 @@ const bgmenu = function () {
 
   if (nowat <= offset) { //0~910 menu沒有bg 首區內
     $("#rogerArrow").fadeOut(); //隱藏至頂按鈕
-    
+
     if (viewWidth > 767) $("#rogerMenu").removeClass('bg-custom'); //大畫面
     else $("#rogerMenu").addClass('bg-custom'); //小畫面
   } else { //在其他主題時
@@ -59,15 +66,14 @@ var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {
   loop: false,
-  delay: 125,
+  delay: 100,
 });
 
 typewriter
   .pauseFor(1000)
-  .typeString('<span id="slogan">To make each day count<span>&#128513;</span><span>&#128513;</span><span>&#128513;</span></span>')
+  .typeString('<span id="slogan">To make each day count<span>&#128513;</span><span>&#128513;</span><span>&#128513;...</span></span>')
   .pauseFor(500)
-  .deleteChars(6)
+  .deleteChars(9)
   .typeString('<br><span style="font-size:40px">Roger Lo</span><br><span>Web developer</span>')
   .pauseFor(1000)
   .start();
-  

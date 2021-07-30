@@ -23,6 +23,17 @@
   border-radius: 5px;
 }
 
+/* fixed */
+@media (max-width: 960px){
+  .navbar-collapse{
+    margin: auto;
+  }
+  .navbar-collapse>ul>li{
+    margin-left: 0 !important;
+  }
+}
+
+
 /* cover info */
 .card{
   position: relative;
